@@ -1,2 +1,1 @@
-# terryburns.github.io
-terryburnsdesign.com
+# www.terryburnsdesign.com
