@@ -142,7 +142,8 @@ a:hover {
 }
 
 .bb-custom-wrapper .title {
-  top: 21px;
+  line-height: 32px;
+  top: 20px;
   left: 150px;
   position: absolute;
   z-index: 1000;
