@@ -33,6 +33,11 @@ a:hover {
 	color: #000;
 }
 
+svg {
+  width: 32px;
+  height: 32px;
+}
+
 .outdatedbrowser {
   top: 0px;
   right: 0px;
@@ -65,7 +70,8 @@ a:hover {
 	left: 240px;
 }
 
-.slideRight .title {
+.slideRight .header,
+.slideRight .footer {
   display: none;
 }
 
@@ -136,15 +142,10 @@ a:hover {
   font-weight: 800;
 }
 
-.menu-panel div svg {
-  width: 32px;
-  height: 32px;
-}
-
-.bb-custom-wrapper .title {
+.bb-custom-wrapper .header {
   line-height: 32px;
   top: 20px;
-  left: 150px;
+  right: 20px;
   position: absolute;
   z-index: 1000;
 }
@@ -201,7 +202,15 @@ a:hover {
 	box-shadow: 0 -4px #fff, 0 4px #fff;
 }
 
-.no-js .bb-custom-wrapper .title,
+.bb-custom-wrapper .footer {
+  bottom: 20px;
+  right: 20px;
+  position: absolute;
+  z-index: 1000;
+}
+
+.no-js .bb-custom-wrapper .header,
+.no-js .bb-custom-wrapper .footer,
 .no-js .bb-custom-wrapper nav span,
 .no-js .menu-button {
 	display: none;
