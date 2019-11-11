@@ -123,7 +123,14 @@ var Page = (function() {
   }
 
   function updateTOC() {
-    $menuItems.removeClass( 'menu-toc-current' ).eq( current ).addClass( 'menu-toc-current' );
+    $menuItems
+      .removeClass('menu-toc-current')
+      .eq(
+        $('a[href="#' + $items.eq(current).data('id') + '"]')
+          .parent()
+          .index()
+      )
+      .addClass('menu-toc-current');
   }
 
   function updateNavigation( isLastPage ) {
